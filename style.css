@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family:'Raleway';
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    background: linear-gradient(rgb(75, 66, 207),rgb(25, 212, 25));
+}
+
+.cabecalho-menu{
+        display:flex;
+        gap: 32px;
+    }
+
+.cabecalho-img{
+width: 50px;
+}
+.cabecalho-menu-item{
+    font-size: 20px;
+    color:rgb(14, 13, 14);
+}

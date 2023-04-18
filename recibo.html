@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img class = "cabecalho-img" 
+        src="imagens/moeda.jpg"
+        alt="logo">
+        <nav class="cabecalho-menu">
+           <a class="cabecalho-menu-item" href="index.html">Início</a>
+           <a class=" cabecalho-menu-item" href="recibo.html">Recibo</a>
+        </nav>
+     </header>
+     <main class="conteudo">
+        <h1 class="conteudo-titulo">Recibo de pagamento</h1>
+        <form id="formulario" class="conteudo-form">
+            <div class="conteudo-form-linha">
+                <label for="nomepagou" class="conteudo-form-linha-label">
+                    Nome de quem pagou
+                </label>
+                <input type="text" class="conteudo-form-linha-input"
+                name="nomepagou" id="nomepagou">
+            </div>
+            <div class="conteudo-form-linha">
+                <label for="valorpagoextenso" class="conteudo-form-linha-label">
+                    Valor pago (por extenso)
+                </label>
+                <input type="text" class="conteudo-form-linha-input"
+                name="valorpagoextenso" id="valorpagoextenso">
+            </div>
+            <div class="conteudo-form-linha">
+                <label for="valorpago" class="conteudo-form-linha-label">
+                    Valor pago (número)
+                </label>
+                <input type="text" class="conteudo-form-linha-input"
+                name="valorpago" id="valorpago">
+                <div class="conteudo-form-linha">
+                    <label class="conteudo-form-linha-label" for="referente">Descrição</label>
+                    <textarea  class="conteudo-form-linha-input" name="referente" id="referente" 
+                        cols="30" rows="3" id="referente"></textarea>
+                </div>
+                <div class="conteudo-form-linha">
+                    <label class="conteudo-form-linha-label" for="data">Data</label>
+                    <input class="conteudo-form-linha-input" type="date" name="data" id="data">
+                </div>
+                <div class="conteudo-form-linha">
+                    <label class="conteudo-form-linha-label" for="nomerecebeu">Nome de quem recebeu</label>
+                    <input class="conteudo-form-linha-input" type="text" name="nomerecebeu" id="nomerecebeu">
+                </div>
+                <div class="conteudo-form-linha" id="btn">
+                    <button class="conteudo-form-btn">
+                        Processar
+                        <button>
+                  </div >
+
+        </form>
+        <div id="recibo"> 
+            </div>
+
+     </main>
+     <script src="script.js"></script>
+</body>
+</html>
